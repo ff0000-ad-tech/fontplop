@@ -44,7 +44,7 @@
       "electronPackagerConfig": {
         "packageManager": "npm",
         "extendInfo": "Info.plist",
-        "icon": "src/assets/system-icons/icon.icns",
+        "icon": "src/assets/system-icons-red/icon.icns",
         "name": "fontplop"
       },
       "electronWinstallerConfig": {
@@ -52,7 +52,7 @@
       },
       "electronInstallerDMG": {
         "background": "src/assets/build/dmg-background-combined.tiff",
-        "icon": "src/assets/system-icons/icon.icns"
+        "icon": "src/assets/system-icons-red/icon.icns"
       },
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
@@ -94,6 +94,7 @@
     "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
+    "electron-builder": "^20.28.4",
     "electron-forge": "^4.1.2",
     "electron-prebuilt-compile": "1.7.8",
     "jest": "^21.2.1",

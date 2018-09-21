@@ -6,7 +6,7 @@ const versionCheck = require('github-version-checker')
 const storage = require('electron-json-storage')
 
 const repo = 'matthewgonzalez/fontplop'
-const iconPath = 'assets/system-icons/icon_64x64.png'
+const iconPath = 'assets/system-icons-red/icon_64x64.png'
 const updateURL = 'http://fontplop.com/'
 
 function showUpdateMessageBox (update) {
