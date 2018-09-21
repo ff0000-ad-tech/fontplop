@@ -1,4 +1,3 @@
-
 <p align="center">
   <img alt="fontplop logo" src="https://user-images.githubusercontent.com/659829/31784135-7f48b70a-b4b5-11e7-9849-7626098460d0.png" width=200>
 </p>
@@ -13,31 +12,42 @@ FontPlop is an OSX/macOS application which takes `ttf` and `otf` files and outpu
 
 <img src="https://user-images.githubusercontent.com/659829/31313375-6a23f4f2-ab96-11e7-9dfb-3643df84e824.gif" alt="fontplop demo" height=300>
 
-
 ### Installation
 
-`brew cask install fontplop`
+Build the app, deployed into an `out/` subfolder that is not part of the git repository (for now) because of file size.
 
+```sh
+npm install
+npm install electron-builder --save-dev
+```
+
+### Deployment
+
+Build the app, deployed into an `out/` subfolder that is not part of the git repository (for now) because of file size.
+
+```sh
+npm run make
+```
 
 ### Testing
 
-Run lint (tslint) and tests (Jest) like so:
+Create a dev version of the app which will reflect CSS / HTML changes in real time, but may require additional executions for function changes.
 
 ```sh
-npm run lint
-npm run test
+npm start
 ```
 
-### Generated CSS (recommended)
+### Generated CSS (recommended - functionality still exists but has been disabled for this build)
 
 _Stolen directly from the Typekit site 💂💰_
 
 ```css
-
 @font-face {
-    font-family:"My Font";
-    src:url("my-font.woff2") format("woff2"),url("my-font.woff") format("woff"),url("my-font.otf") format("opentype");
-    font-style:normal;font-weight:400;
+    font-family: "My Font";
+    src: url("my-font.woff2") format("woff2"), url("my-font.woff") format("woff"),
+        url("my-font.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
 }
 ```
 
@@ -55,7 +65,6 @@ Via OpenCollective: https://opencollective.com/fontplop
 
 Via Bitcoin: `182JQcPACPh3bf6iQE73KB4Dvv5na6zep4`
 
-
 ### Building fontplop.com
 
 fontplop.com is hosted on Github pages. Publish changes like so:
@@ -64,29 +73,26 @@ fontplop.com is hosted on Github pages. Publish changes like so:
 2. Make changes
 3. `npm run deploy` to publish to github
 
-
 ### Generating Installation Background
 
 To accomodate for retina/non-retina screens, a multipage `TIFF` should be generated from two files.
 
-```$ cd src/assets/build```
+`$ cd src/assets/build`
 
-```$ tiffutil -catnosizecheck dmg-background.tiff dmg-background@2x.tiff -out dmg-background-combined.tiff```
+`$ tiffutil -catnosizecheck dmg-background.tiff dmg-background@2x.tiff -out dmg-background-combined.tiff`
 
 ### Credits
 
 #### Contributors
 
-This project exists thanks to all the people who contribute. 
+This project exists thanks to all the people who contribute.
 <a href="graphs/contributors"><img src="https://opencollective.com/fontplop/contributors.svg?width=890&button=false" /></a>
-
 
 #### Backers
 
 Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/fontplop#backer)]
 
 <a href="https://opencollective.com/fontplop#backers" target="_blank"><img src="https://opencollective.com/fontplop/backers.svg?width=890"></a>
-
 
 #### Sponsors
 
@@ -102,8 +108,6 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 <a href="https://opencollective.com/fontplop/sponsor/7/website" target="_blank"><img src="https://opencollective.com/fontplop/sponsor/7/avatar.svg"></a>
 <a href="https://opencollective.com/fontplop/sponsor/8/website" target="_blank"><img src="https://opencollective.com/fontplop/sponsor/8/avatar.svg"></a>
 <a href="https://opencollective.com/fontplop/sponsor/9/website" target="_blank"><img src="https://opencollective.com/fontplop/sponsor/9/avatar.svg"></a>
-
-
 
 ### License
 
